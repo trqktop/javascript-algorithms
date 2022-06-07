@@ -7,7 +7,12 @@
 */
 
 function capitalize(str) {
-    // Напишите код здесь
+    let arrStr = str.split(' ')
+    let mapArr = arrStr.map(element => {
+        return element.slice(0, 1).toUpperCase() + element.slice(1)
+    });
+    let joinMapArr = mapArr.join(' ')
+    return joinMapArr
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
