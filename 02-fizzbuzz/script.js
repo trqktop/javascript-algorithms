@@ -11,17 +11,16 @@
 */
 
 function fizzBuzz(num) {
-    num % 3 === 0 && num % 5 == 0
-        ? console.log('fizzbuzz')
-        : num % 3 === 0
-            ? console.log('fizz')
-            : num % 5 === 0
-                ? console.log('buzz')
-                : console.log(num);
+    for (let i = 1; i <= num; i++) {
+        i % 3 === 0 && i % 5 == 0
+            ? console.log('fizzbuzz')
+            : i % 3 === 0
+                ? console.log('fizz')
+                : i % 5 === 0
+                    ? console.log('buzz')
+                    : console.log(i);
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-for (let i = 1; i <= 15; i++) {
-    fizzBuzz(i)
-}
