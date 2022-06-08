@@ -6,13 +6,16 @@
  * 
  * Напишите функцию, которая принимает на вход число n и возвращает n-й элемент
  * последовательности Фибоначчи.
-*/  
+*/
 
 function fibonacci(n) {
-    let fibonacciArr = [0, 1, 1]
-
+    let fibonacciArr = [0, 1]
+    for (let i = fibonacciArr[fibonacciArr.length - 1]; i <= n; i += fibonacciArr[fibonacciArr.length - 2]) {
+        fibonacciArr.push(i)
+    }
+    return fibonacciArr[n - 1]
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-console.log(fibonacci(20)); // 2. Четвёртое число последовательности — двойка (0, 1, 1, 2)
+console.log(fibonacci(4)); // 2. Четвёртое число последовательности — двойка (0, 1, 1, 2)
