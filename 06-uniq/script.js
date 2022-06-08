@@ -8,7 +8,9 @@
 */
 
 function uniq(arr) {
-    // Напишите код здесь
+    return arr.filter(function (item, index, arr) {
+        return arr.indexOf(item) === index
+    })
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
@@ -16,3 +18,5 @@ function uniq(arr) {
 console.log(uniq([1, 2, 5, 4, 2])); // [1, 2, 5, 4]
 console.log(uniq([3, 3, 3, 5])); // [3, 5]
 console.log(uniq([1, 4, 2, 2, 3, 4, 8])); // [1, 4, 2, 3, 8]
+
+
