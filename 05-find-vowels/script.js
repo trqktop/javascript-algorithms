@@ -5,14 +5,15 @@
  * строку str  и возвращающую количество гласных, содержащихся в этой строке.
  * Для вашего удобства вот массив кириллических гласных:
  * 
- * ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'].
+ * .
  *
 */
 
 function findVowels(str) {
     let strArr = str.toLowerCase().split('')
     let vowelsArr = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е']
-
+    let intersectionArr = vowelsArr.filter(item => strArr.includes(item));
+    return intersectionArr.length
 }
 
 
