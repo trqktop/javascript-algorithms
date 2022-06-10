@@ -18,8 +18,17 @@ function palindrome(str) {
     let reverseStr = str.split('').reverse().join('')
     return reverseStr == str ? true : false;
 }
-
+/*
 // Протестируйте решение, вызывая функцию с разными аргументами:
+function palindrome(str) {
+    if (str == ''){return true}else{
+    str = str.toUpperCase().replace(',', '').replace('!', '').replace(' ', '').replace(' ', '')
+    let reverseStr = [...str].reduce((prev, item) => item + prev)
+    return str == reverseStr ?
+        true : false}
+
+}
+*/
 
 console.log(palindrome('топот')); // должно быть true
 console.log(palindrome('Saippuakivikauppias')); // true
