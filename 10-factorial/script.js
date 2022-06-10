@@ -8,7 +8,14 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+    let arrN = []
+    for (let i = 1; i <= n; i++) {
+        arrN.push(i);
+
+    }
+    return arrN.length !== 0 ?
+        arrN.reduce((prev, cur) => prev * cur)
+        : arrN.length + 1;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
