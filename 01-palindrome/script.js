@@ -15,8 +15,8 @@
 
 function palindrome(str) {
     str = str.toUpperCase().replace(',', '').replace('!', '').replace(' ', '').replace(' ', '')
-    let reverseStr = str.split('').reverse().join('')
-    return reverseStr == str ? true : false;
+    const reverseStr = str.split('').reverse().join('')
+    return reverseStr === str ? true : false;
 }
 /*
 // Протестируйте решение, вызывая функцию с разными аргументами:

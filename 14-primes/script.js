@@ -7,15 +7,15 @@
 */
 
 function primes(num) {
-    let numArr = [2,3]
+    const numArr = [2, 3]
 
     for (let i = 4; i <= num; i++) {
         if (i != 2 && i % 2 !== 0) {
             numArr.push(i)
         }
     }
-    let numArrFilter = numArr.filter((item) => item != 5 ? item % 5 : item).filter((item) => item != 3 ? item % 3 : item);
-    if (num <= 0){numArrFilter = []}
+    const numArrFilter = numArr.filter((item) => item != 5 ? item % 5 : item).filter((item) => item != 3 ? item % 3 : item);
+    if (num <= 0) { return [] }
     return numArrFilter
 }
 

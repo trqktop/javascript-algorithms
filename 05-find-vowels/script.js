@@ -10,9 +10,9 @@
 */
 
 function findVowels(str) {
-    let strArr = str.toLowerCase().split('')
-    let vowelsArr = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е']
-    let intersectionArr = vowelsArr.filter(item => strArr.includes(item));
+    const strArr = str.toLowerCase().split('')
+    const vowelsArr = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е']
+    const intersectionArr = vowelsArr.filter(item => strArr.includes(item));
     return intersectionArr.length
 }
 

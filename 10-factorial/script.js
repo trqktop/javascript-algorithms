@@ -8,7 +8,7 @@
 */
 
 function factorial(n) {
-    let arrN = []
+    const arrN = []
     for (let i = 1; i <= n; i++) {
         arrN.push(i);
 
